@@ -4,11 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-            crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
-    </head>
-    <body>
+        <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet" />
         <style>
             * {
                 font-family: 'Open Sans', sans-serif;
@@ -16,18 +12,35 @@
                 padding: 0;
                 margin: 0;
             }
+            @media screen and (max-width: 600px) {
+                .clothing-container {
+                    margin: 0 auto !important;
+                }
+                .clothing {
+                    display: block !important;
+                }
+                .buy a {
+                    position: relative;
+                    top: -30px;
+                }
+                .second {
+                    height: 90% !important;
+                }
+            }
         </style>
+    </head>
+    <body>
         <table cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td class="wrapper" width="600" align="center" style="overflow: hidden">
                     <table cellpadding="0" cellspacing="0" style="background: white; max-width: 600px">
-                        <!-- Start header -->
+                        <!-- Start header image -->
                         <tr>
                             <td class="top" width="600" height="150" style="background: #ff251d; text-align: center">
                                 <img src="http://1000logos.net/wp-content/uploads/2018/01/supreme-logo.png" alt="Supreme Logo" style="height: 100%;" />
                             </td>
                         </tr>
-                        <!-- End header -->
+                        <!-- End header image -->
                         <!-- Start shop and contact column -->
                         <tr style="background: #fafafa">
                             <td>
@@ -36,7 +49,7 @@
                                      background-position: center; background-size: cover">
                                         <table cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td align="left" style="text-align: center" height="200" width="300">
+                                                <td style="text-align: center" height="200" width="300" class="link">
                                                     <a href="https://www.supremenewyork.com/shop" style="color: white; text-decoration: none; padding: 5px 15px;
                                                      border-bottom: 2px solid white; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px">Shop</a>
                                                 </td>
@@ -47,7 +60,7 @@
                                      background-position: center; background-size: cover; border-right: 4px solid black">
                                         <table cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td align="left" style="text-align: center;" height="200" width="300">
+                                                <td style="text-align: center;" height="200" width="300" class="link">
                                                     <a href="https://www.supremenewyork.com/stores" style="color: white; text-decoration: none; padding: 5px 15px;
                                                      border-bottom: 2px solid white; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px">Stores</a>
                                                 </td>
@@ -61,11 +74,13 @@
                         <!-- Start popular section -->
                         <tr>
                             <td style="padding-bottom: 40px; min-width: 600px; z-index: 20">
+                                <!-- Popular header -->
                                 <table cellpadding="0" cellspacing="0" style="background: white">
                                     <td width="600" align="center" style="padding: 30px 0; background: white">
-                                        <h2 style="color: #202020; font-weight: 600; letter-spacing: 1px; font-family: 'Kosugi', sans-serif;">Popular</h2>
+                                        <h1 style="color: #202020; font-weight: 600; letter-spacing: 1px; font-family: 'Kosugi', sans-serif;">Popular</h1>
                                     </td>
                                 </table>
+                                <!-- Popular content -->
                                 <table cellpadding="0" cellspacing="0" style="background: white" class="clothing-container">
                                     <td class="clothing" width="200" height="200">
                                         <div class="cloth" style="background: white; height: 100%; width: 100%; margin: 0 auto; background-image: url('https://s6.postimg.cc/vp87x10hd/supreme-lv-backpack.png');
@@ -89,18 +104,20 @@
                         <!-- Start about section -->
                         <tr>
                             <td style="background: #fafafa; padding-bottom: 30px">
+                                <!-- About header -->
                                 <table cellpadding="0" cellspacing="0">
                                     <td width="600" align="center" style="padding: 30px 0">
-                                        <h2 style="color: #202020; font-weight: 600; letter-spacing: 1px; font-family: 'Kosugi', sans-serif;">About</h2>
+                                        <h1 style="color: #202020; font-weight: 600; letter-spacing: 1px; font-family: 'Kosugi', sans-serif;">About</h1>
                                     </td>
                                 </table>
+                                <!-- About content -->
                                 <table cellpadding="0" cellspacing="0">
                                     <td width="600" style="padding: 0 30px">
-                                        <p style="line-height: 1.6; color: #353535; font-weight: 400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, inventore placeat soluta pariatur cupiditate autem quisquam officia doloremque voluptates consequuntur? Consequuntur expedita repudiandae maiores voluptatem, veniam rerum 
+                                        <p style="line-height: 1.6; color: #353535; font-weight: 400; font-size: 18px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, inventore placeat soluta pariatur cupiditate autem quisquam officia doloremque voluptates consequuntur? Consequuntur expedita repudiandae maiores voluptatem, veniam rerum 
                                             temporibus quae, ad sed magnam.</p>
                                         <br>
-                                        <p style="line-height: 1.6; color: #353535; font-weight: 400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus eos cumque? Eos non, ex alias minus autem libero nihil necessitatibus molestiae quisquam voluptatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, illo!
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <p style="line-height: 1.6; color: #353535; font-weight: 400; font-size: 18px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus eos cumque? Eos non, ex alias minus autem libero nihil necessitatibus molestiae quisquam voluptatibus. Lorem ipsum, dolor sit amet consectetur.
+                                        </p>
                                     </td>
                                 </table>
                             </td>
@@ -122,6 +139,7 @@
                             <td style="padding: 30px 0">
                                 <table cellpadding="0" cellspacing="0">
                                     <td width="600" align="center">
+                                        <!-- Icon container -->
                                         <div class="icons">
                                             <a href="https://www.instagram.com/supremenewyork/?hl=en" style="text-decoration: none; color: white; padding: 5px; margin: 0 5px; font-size: 22px">
                                                 <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-128.png" alt="Instagram" height="28" width="28">
@@ -141,7 +159,7 @@
                             </td>
                         </tr>
                         <!-- End icon section -->
-                        <!-- Start bottom -->
+                        <!-- Start unsubscribe section -->
                         <tr>
                             <td>
                                 <table cellpadding="0" cellspacing="0">
@@ -151,31 +169,10 @@
                                 </table>
                             </td>
                         </tr>
-                        <!-- End bottom -->
-                        
+                        <!-- End unsubscribe section -->
                     </table>
                 </td>
             </tr>
         </table>
-        <style>
-            @media screen and (max-width: 600px) {
-                .clothing-container {
-                    margin: 0 auto !important;
-                }
-                .clothing {
-                    display: block !important;
-                }
-                .buy {
-
-                }
-                .buy a {
-                    position: relative;
-                    top: -30px;
-                }
-                .second {
-                    height: 90% !important;
-                }
-            }
-        </style>
     </body>
 </html>
